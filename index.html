@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paweł Goliński – Applied Computer Science student</title>
+  <meta name="description" content="Portfolio of Paweł Goliński.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="nav">
+    <a href="#top" class="logo">PG</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#path">Path</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="hi">Hi, I'm</p>
+      <h1 aria-label="Paweł Goliński"><span class="w">Paweł</span> <span class="w">Goliński</span></h1>
+      <p class="role">I'm an Applied Computer Science student who builds <span id="typed"></span><i class="caret"></i>
+      </p>
+      <div class="cta"><a class="btn solid" href="#projects">See my projects</a>
+        <a class="btn" href="GolinskiPawel_CV.pdf" target="_blank" download>Download CV</a>
+      </div>
+    </div>
+    <img class="portrait" src="assets/photo.jpg" alt="Portrait of Paweł Goliński">
+  </section>
+
+  <main>
+    <section id="about" class="wrap about text-justify">
+      <h2>About me</h2>
+      <div>
+        <p>My main focus right now is my studies. I'm doing <strong>Applied Computer Science</strong> at <strong>Wrocław
+            University of Science and Technology</strong>, and step by step I'm growing as a software developer. I'm
+          still exploring the field, and so
+          far backend is what I enjoy most: writing APIs and connecting them with databases and a frontend.</p>
+        <p>I learn something new with every project, and at the moment that includes Microsoft Azure: this site is my
+          first deployment there. Away from the keyboard I go to the gym, play basketball, ride my bike and play video
+          games.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="wrap">
+      <h2>Projects</h2>
+      <article class="project">
+        <div class="shot" data-ph="Screenshot: EatSafe"><img src="assets/eatsafe.png" alt="EatSafe screenshot"
+            onerror="this.remove()"></div>
+        <div>
+          <h3>EatSafe</h3>
+          <p class="sub">Food safety GIS warnings monitor</p>
+          <p>I started this project and led a team of four. It scrapes official food safety alerts,
+            processes them and
+            sends email notifications. It runs as a desktop and web hybrid, with a REST API for CRUD operations and
+            validation on top of SQLAlchemy.</p>
+          <ul class="tags">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>HTMX</li>
+            <li>SQLAlchemy</li>
+            <li>pywebview</li>
+          </ul>
+          <a class="link" href="https://github.com/pawel200435/EatSafe-GIS-Warnings-Monitor">View on GitHub</a>
+        </div>
+      </article>
+      <article class="project flip">
+        <div class="shot" data-ph="Screenshot: LcVRP solver"><img src="assets/geneticAlgorithm.png"
+            alt="LcVRP solver screenshot" onerror="this.remove()"></div>
+        <div>
+          <h3>LcVRP optimization engine</h3>
+          <p class="sub">Genetic algorithm in C++ for a university competition</p>
+          <p>A solver for the NP-hard Limited Capacitated Vehicle Routing Problem. Strategy and Observer patterns keep
+            genetic operators swappable and the run observable. Move semantics cut memory copies, and a type-safe Result
+            pattern handles parsing errors.</p>
+          <ul class="tags">
+            <li>C++17/20</li>
+            <li>CMake</li>
+            <li>Design patterns</li>
+          </ul>
+          <a class="link" href="https://github.com/pawel200435/LcVRP-Genetic-Algorithm">View on GitHub</a>
+        </div>
+      </article>
+      <article class="project">
+        <div class="shot" data-ph="Screenshot: Cocktails API (Swagger)"><img src="assets/cocktailsApi.png"
+            alt="Cocktails API screenshot" onerror="this.remove()"></div>
+        <div>
+          <h3>Cocktails management API</h3>
+          <p class="sub">Recruitment task for KN Solvro</p>
+          <p>A modular REST API for recipes and inventory. It has JWT authentication, role-based access control,
+            multi-criteria filtering, automated migrations and seeding, and Swagger documentation.</p>
+          <ul class="tags">
+            <li>TypeScript</li>
+            <li>NestJS</li>
+            <li>PostgreSQL</li>
+            <li>Prisma</li>
+          </ul>
+          <a class="link" href="https://github.com/pawel200435/cocktail-API">View on GitHub</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="wrap">
+      <h2>Skills</h2>
+      <div id="skillGroups"></div>
+    </section>
+
+    <section id="path" class="wrap">
+      <h2>Path so far</h2>
+      <ol class="timeline">
+        <li><time>Oct 2024 – Feb 2028</time>
+          <h3>B.Eng. Applied Computer Science</h3>
+          <p>Wrocław University of Science and Technology. Data structures, OOP, databases, networks, Linux
+            administration.</p>
+        </li>
+        <li><time>Feb 2026</time>
+          <h3>Cisco CCNA: ITN and SRWE</h3>
+          <p>Introduction to Networks, plus Switching, Routing and Wireless Essentials.</p>
+        </li>
+        <li><time>Oct 2023</time>
+          <h3>Web development intern, Agritxt (Ireland)</h3>
+          <p>Built responsive UIs and connected them to MySQL, working with an international team.</p>
+        </li>
+        <li><time>Mar 2023</time>
+          <h3>IT support intern, Netland Computers</h3>
+          <p>Hardware repairs, diagnostics, Windows/Linux setups and LAN equipment.</p>
+        </li>
+        <li><time>2019 – 2024</time>
+          <h3>IT Technician diploma</h3>
+          <p>Technical Secondary School No. 1, Ostrów Wielkopolski.</p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <h2>Let's talk</h2>
+      <p>I'm looking for internships and junior roles in backend and cloud development.</p>
+      <div class="cta"><a class="btn solid" href="mailto:golinski-pawel@wp.pl">golinski-pawel@wp.pl</a><a class="btn"
+          href="https://github.com/pawel200435">GitHub</a><a class="btn"
+          href="https://linkedin.com/in/pawel-golinski">LinkedIn</a></div>
+      <small>© <span id="year"></span> Paweł Goliński. Hosted on Azure Blob Storage.</small>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
